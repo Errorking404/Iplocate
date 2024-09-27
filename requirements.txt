@@ -1,0 +1,4 @@
+requests
+os
+termcolor
+colorama
