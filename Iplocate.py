@@ -1,11 +1,15 @@
 import requests
-from termcolor import colored                     from sys import platform as _platform, exit
-import os                                         
-if _platform == 'win32':                              import colorama
-    colorama.init()                               
-def get_ip_location():                                ip_address = input("Enter the IP address you want to locate: ")                                     url = f"http://ip-api.com/json/{ip_address}"
-    response = requests.get(url)
+from termcolor import colored
+import os
+import sys
+platform = sys.platform                           if platform == 'win32':
+    import colorama
+    colorama.init()
 
+def get_ip_location():
+    ip_address = input("Enter the IP address you want to locate: ")
+    url = f"http://ip-api.com/json/{ip_address}"
+    response = requests.get(url)
     # Check if the request was successful
     if response.ok:
         data = response.json()
@@ -93,7 +97,7 @@ def main():
 |   [_ |    \ |    \|     ||    \      |  | |  |    |  |  |    \ |  _  /   \_ |     \
 |     ||  .  \|  .  \     ||  .  \     |  | |  |    |  |  |  .  \|  |  \     ||  .  |
 |_____||__|\_||__|\_|\___/ |__|\_|    |____||__|    |__|  |__|\_||__|__|\____||__|\_|
-                                                  
+
 
 """
 
