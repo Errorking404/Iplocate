@@ -2,7 +2,8 @@ import requests
 from termcolor import colored
 import os
 import sys
-platform = sys.platform                           if platform == 'win32':
+platform = sys.platform                          
+if platform == 'win32':
     import colorama
     colorama.init()
 
