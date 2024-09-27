@@ -1,4 +1,4 @@
-**IP Tracker**
+# **IP Tracker**
 ================
 
 A simple IP tracker program that allows users to track the location of a target IP address or their own IP address.
@@ -17,12 +17,16 @@ A simple IP tracker program that allows users to track the location of a target 
 * termcolor library
 * colorama library (for Windows users)
 
-**Installation**
+## **Installation**
 
-1. Clone the repository: `git clone https://github.com/Errorking404/Iplocate/tree/main`
-2. `cd Iplocate`
-2. Install the required libraries: `pip install -r requirements.txt`
-3. Run the program: `python iptracker.py`
+To install the IP Tracker tool, follow these steps:
+
+### **Step 1: Clone the repository**
+
+```bash
+git clone https://github.com/Errorking404/Iplocate.git <button class="copy-button" data-clipboard-text="git clone https://github.com/Errorking404/Iplocate.git">Copy</button>
+pip install -r requirements.txt<button class="copy-button" data-clipboard-text="pip install -r requirements.txt">Copy</button>
+python iptracker.py <button class="copy-button" data-clipboard-text="python iptracker.py">Copy</button>
 
 **Usage**
 
@@ -65,3 +69,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<script>
+  const copyButtons = document.querySelectorAll('.copy-button');
+
+  copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const text = button.getAttribute('data-clipboard-text');
+      navigator.clipboard.writeText(text).then(() => {
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+          button.textContent = 'Copy';
+        }, 2000);
+      });
+    });
+  });
+</script>
