@@ -18,19 +18,26 @@ A simple IP tracker program that allows users to track the location of a target 
 * colorama library (for Windows users)
 
 **Installation**
+copy these commands and paste them on termux/linux.
 
-1. copy these commands and paste them on termux/linux.
-2.  ```
-3.  git clone https://github.com/Errorking404/Iplocate.git
-4. cd Iplocate
-5. ```
-2. Install the required libraries: ```
-3. pip install -r requirements.txt
-4. ```
-5. Run the program:
-6. ```
-7. python iptracker.py
-8. ```
+```
+git clone https://github.com/Errorking404/Iplocate.git
+cd Iplocate
+
+```
+Install the required libraries:
+
+```
+ pip install -r requirements.txt
+
+```
+Run the program:
+
+   ```
+   
+ python iptracker.py
+
+ ```
 
 **Usage**
 
