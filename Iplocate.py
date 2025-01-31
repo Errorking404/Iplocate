@@ -143,7 +143,7 @@ def main():
             os.system("git pull")
         
         elif choice =='4':
-            print(coloured("Goodbye",'red'))
+            print(colored("Goodbye",'red'))
         
         else:
             
