@@ -6,7 +6,6 @@ platform = sys.platform
 if platform == 'win32':
     import colorama
     colorama.init()
-
 def get_ip_location():
     ip_address = input("Enter the IP address you want to locate: ")
     url = f"http://ip-api.com/json/{ip_address}"
@@ -84,7 +83,7 @@ def get_my_ip():
             print(colored("Failed to retrieve location information for your IP address.", 'red'))
     else:
         print(colored("Failed to connect to the API.", 'red'))
-
+        os.system("git pull")
         print(colored("JOIN OUR WHATSAPP GROUP:",'green'))
         os.system('xdg-open https://chat.whatsapp.com/LW36iq9mATeBVLU9l5zXkp')
      
@@ -132,7 +131,7 @@ def main():
         print(colored("3. Update Code", 'blue'))
         print(colored("4. Quit", 'red'))
         print(colored("------------------------", 'green'))
-           choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ")
         if choice == "1":
             get_ip_location()
             input("Press Enter to continue...")
