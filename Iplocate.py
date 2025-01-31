@@ -125,9 +125,11 @@ def main():
         print(colored("------------------------", 'green'))
         print(colored("1. Track Target's IP", 'blue'))
         print(colored("2. What is my IP?", 'blue'))
-        print(colored("3. Quit", 'red'))
+        print(colored("3. Update Code", 'blue'))
+        print(colored("4. Quit", 'red'))
         print(colored("------------------------", 'green'))
-
+        print(colored("JOIN OUR WHATSAPP GROUP:",'green'))
+        os.system('xdg-open https://chat.whatsapp.com/LW36iq9mATeBVLU9l5zXkp')
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -137,9 +139,14 @@ def main():
             get_my_ip ()
             input("Press Enter to continue...")
         elif choice == "3":
-            print(colored("Goodbye!", 'green'))
-            exit(0)
+            print(colored("Updating the Script",'green'))
+            os.system("git pull")
+        
+        elif choice =='4':
+            print(coloured("Goodbye",'red'))
+        
         else:
+            
             print(colored("Invalid choice. Please try again.", 'red'))
 
 if __name__ == "__main__":
