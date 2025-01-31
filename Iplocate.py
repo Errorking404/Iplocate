@@ -85,6 +85,10 @@ def get_my_ip():
     else:
         print(colored("Failed to connect to the API.", 'red'))
 
+        print(colored("JOIN OUR WHATSAPP GROUP:",'green'))
+        os.system('xdg-open https://chat.whatsapp.com/LW36iq9mATeBVLU9l5zXkp')
+     
+
 def main():
     import time
     import sys
@@ -128,10 +132,7 @@ def main():
         print(colored("3. Update Code", 'blue'))
         print(colored("4. Quit", 'red'))
         print(colored("------------------------", 'green'))
-        print(colored("JOIN OUR WHATSAPP GROUP:",'green'))
-        os.system('xdg-open https://chat.whatsapp.com/LW36iq9mATeBVLU9l5zXkp')
-        choice = input("Enter your choice: ")
-
+           choice = input("Enter your choice: ")
         if choice == "1":
             get_ip_location()
             input("Press Enter to continue...")
