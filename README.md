@@ -31,12 +31,10 @@ Install the required libraries:
  pip install -r requirements.txt
 
 ```
-Run the program:
+**Run the program:**
 
    ```
-   
- python iptracker.py
-
+   python Iplocate
  ```
 
 **Usage**
@@ -44,7 +42,7 @@ Run the program:
 1. Run the program and select an option from the menu:
         * 1. Track Target's IP
         * 2. What is my IP?
-        * 3. Quit
+        * 3. Update Code
 2. Enter the target IP address or select the "What is my IP?" option
 3. The program will display the IP location information and open the location on Google Maps
 
@@ -57,7 +55,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 This project is licensed under the **MIT License**. See the LICENSE file for more information.
 
 **Author**
-**Error**
+   **Error**
 
 MIT License
 
