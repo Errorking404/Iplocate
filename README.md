@@ -34,7 +34,7 @@ Install the required libraries:
 **Run the program:**
 
    ```
-   python Iplocate
+   python Iplocate.py
  ```
 
 **Usage**
