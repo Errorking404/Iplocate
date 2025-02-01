@@ -15,12 +15,15 @@ A simple IP tracker program that allows users to track the location of a target 
 * Python 3.x
 * requests library
 * termcolor library
-* colorama library (for Windows users)
+* colorama library (for   Windows users)
+  
 
 **Installation**
 copy these commands and paste them on termux/linux.
 
 ```
+apt update && apt upgrade -y
+apt install git python python-pip -y
 git clone https://github.com/Errorking404/Iplocate.git
 cd Iplocate
 
@@ -28,8 +31,7 @@ cd Iplocate
 Install the required libraries:
 
 ```
- pip install -r requirements.txt
-
+pip install -r requirements.txt
 ```
 **Run the program:**
 
