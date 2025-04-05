@@ -1,5 +1,4 @@
 requests
-os
 termcolor
 colorama
 Crypto 
